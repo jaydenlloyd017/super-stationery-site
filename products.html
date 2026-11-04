@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <!-- Character set and responsive viewport (needed for mobile layouts) -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected stationery from Super Stationery with images, descriptions and prices.">
+  <title>Products | Super Stationery</title>
+  <!-- Google Font for headings; Bootstrap provides the responsive grid; styles.css controls the site-wide look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Accessibility: lets keyboard users jump past the navigation -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-md container" aria-label="Main navigation">
+      <a class="navbar-brand brand" href="index.html">Super Stationery</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li><li class="nav-item"><a class="nav-link active" href="products.html" aria-current="page">Products</a></li><li class="nav-item"><a class="nav-link" href="events.html">Events</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li></ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="container py-5" aria-labelledby="prod-title">
+      <h1 id="prod-title" class="section-title">Our selected stationery</h1>
+      <p>A hand-picked selection from our range. Prices include VAT. Visit the shop to see the full range.</p>
+      <!-- jQuery filter buttons (see js/main.js) -->
+      <div class="btn-group mb-4" role="group" aria-label="Filter products by category">
+        <button type="button" class="btn btn-outline-dark active" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="btn btn-outline-dark" data-filter="writing" aria-pressed="false">Writing</button>
+        <button type="button" class="btn btn-outline-dark" data-filter="paper" aria-pressed="false">Paper &amp; filing</button>
+        <button type="button" class="btn btn-outline-dark" data-filter="art" aria-pressed="false">Art</button>
+      </div>
+      <p id="filter-status" class="visually-hidden" aria-live="polite"></p>
+      <div class="row g-4" id="product-grid">
+        <div class="col-sm-6 col-lg-4 product" data-category="writing">
+        <article class="card h-100 product-card">
+          <img src="images/fountain-pen.svg" class="card-img-top" alt="Navy fountain pen with gold trim" width="800" height="560" loading="lazy">
+          <div class="card-body">
+            <h3 class="h5 card-title">Heritage Fountain Pen</h3>
+            <p class="card-text">Smooth steel nib and a refillable converter. A gift worth keeping.</p>
+          </div>
+          <div class="card-footer"><strong class="price">£24.99</strong> <span class="text-muted small">inc. VAT</span></div>
+        </article>
+      </div><div class="col-sm-6 col-lg-4 product" data-category="writing">
+        <article class="card h-100 product-card">
+          <img src="images/gel-pens.svg" class="card-img-top" alt="Seven colourful gel pens fanned out" width="800" height="560" loading="lazy">
+          <div class="card-body">
+            <h3 class="h5 card-title">Gel Pen Set (7)</h3>
+            <p class="card-text">Quick-drying 0.5&nbsp;mm gel ink in seven bright colours.</p>
+          </div>
+          <div class="card-footer"><strong class="price">£6.50</strong> <span class="text-muted small">inc. VAT</span></div>
+        </article>
+      </div><div class="col-sm-6 col-lg-4 product" data-category="writing">
+        <article class="card h-100 product-card">
+          <img src="images/highlighters.svg" class="card-img-top" alt="Five pastel highlighters" width="800" height="560" loading="lazy">
+          <div class="card-body">
+            <h3 class="h5 card-title">Pastel Highlighters (5)</h3>
+            <p class="card-text">Chisel tips for neat underlining, with low-smear ink.</p>
+          </div>
+          <div class="card-footer"><strong class="price">£4.99</strong> <span class="text-muted small">inc. VAT</span></div>
+        </article>
+      </div><div class="col-sm-6 col-lg-4 product" data-category="paper">
+        <article class="card h-100 product-card">
+          <img src="images/notebook.svg" class="card-img-top" alt="Teal A5 hardback notebook" width="800" height="560" loading="lazy">
+          <div class="card-body">
+            <h3 class="h5 card-title">A5 Hardback Notebook</h3>
+            <p class="card-text">192 ruled pages of 100&nbsp;gsm paper and a lay-flat spine.</p>
+          </div>
+          <div class="card-footer"><strong class="price">£8.99</strong> <span class="text-muted small">inc. VAT</span></div>
+        </article>
+      </div><div class="col-sm-6 col-lg-4 product" data-category="paper">
+        <article class="card h-100 product-card">
+          <img src="images/folder.svg" class="card-img-top" alt="Blue ring binder folder with paper" width="800" height="560" loading="lazy">
+          <div class="card-body">
+            <h3 class="h5 card-title">Ring Binder Folder</h3>
+            <p class="card-text">A durable A4 lever-arch folder with a reinforced spine.</p>
+          </div>
+          <div class="card-footer"><strong class="price">£5.49</strong> <span class="text-muted small">inc. VAT</span></div>
+        </article>
+      </div><div class="col-sm-6 col-lg-4 product" data-category="art">
+        <article class="card h-100 product-card">
+          <img src="images/pencils.svg" class="card-img-top" alt="Seven colouring pencils" width="800" height="560" loading="lazy">
+          <div class="card-body">
+            <h3 class="h5 card-title">Colouring Pencils (24)</h3>
+            <p class="card-text">Rich, blendable colours for art, craft and the classroom.</p>
+          </div>
+          <div class="card-footer"><strong class="price">£11.99</strong> <span class="text-muted small">inc. VAT</span></div>
+        </article>
+      </div>
+      </div>
+      <hr class="my-5">
+      <h2 class="h3">Price list</h2>
+      <div class="table-responsive">
+        <table class="table table-striped align-middle">
+          <caption>Price list for selected products</caption>
+          <thead><tr><th scope="col">Product</th><th scope="col">Category</th><th scope="col">Price (inc. VAT)</th></tr></thead>
+          <tbody><tr><th scope="row">Heritage Fountain Pen</th><td>Writing</td><td>£24.99</td></tr><tr><th scope="row">Gel Pen Set (7)</th><td>Writing</td><td>£6.50</td></tr><tr><th scope="row">Pastel Highlighters (5)</th><td>Writing</td><td>£4.99</td></tr><tr><th scope="row">A5 Hardback Notebook</th><td>Paper</td><td>£8.99</td></tr><tr><th scope="row">Ring Binder Folder</th><td>Paper</td><td>£5.49</td></tr><tr><th scope="row">Colouring Pencils (24)</th><td>Art</td><td>£11.99</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-md-6">
+          <p class="brand mb-1">Super Stationery</p>
+          <address class="mb-0">Manchester Arndale, 49 High Street, Manchester M4 3AQ<br>
+          Email: <a href="mailto:hello@superstationery.example">hello@superstationery.example</a></address>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <ul class="list-inline mb-1">
+            <li class="list-inline-item"><a href="contact.html#privacy">Privacy &amp; data policy</a></li>
+            <li class="list-inline-item"><a href="contact.html#gdpr">GDPR</a></li>
+            <li class="list-inline-item"><a href="contact.html#terms">Terms &amp; Conditions</a></li>
+            <li class="list-inline-item"><a href="contact.html#cookies">Cookies</a></li>
+          </ul>
+          <small>&copy; 2026 Super Stationery. Prototype website for assessment purposes.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts at the end so the page content loads first. Add further files in js/ later. -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

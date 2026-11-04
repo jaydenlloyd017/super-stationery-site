@@ -1,0 +1,47 @@
+/* ==========================================================
+   Super Stationery - site-wide styles (loaded after Bootstrap)
+   Colours chosen for WCAG AA contrast on the cream background.
+   ========================================================== */
+:root{
+  --cream:#fbf7f0; --navy:#1f2a44; --accent:#c2410c; --accent-dark:#9a3412;
+  --teal:#2f7f79; --panel:#ffffff;
+}
+body{background:var(--cream);color:#222;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6}
+h1,h2,h3{color:var(--navy)}
+a{color:#0b5394}
+a:hover{color:var(--accent-dark)}
+/* Visible keyboard focus (Operable) */
+:focus-visible{outline:3px solid #f2b632;outline-offset:2px}
+/* Skip link: hidden until focused */
+.skip-link{position:absolute;left:-999px;top:0;background:var(--navy);color:#fff;padding:.5rem 1rem;z-index:2000}
+.skip-link:focus{left:0}
+.brand{font-family:"Dancing Script",cursive,Georgia,serif;font-size:1.9rem;color:var(--navy)!important;text-decoration:none}
+.site-header{background:var(--panel);border-bottom:3px solid var(--accent)}
+.navbar .nav-link{color:var(--navy);font-weight:600}
+.navbar .nav-link.active{color:var(--accent-dark);border-bottom:2px solid var(--accent-dark)}
+.section-title{font-family:"Dancing Script",cursive,Georgia,serif;font-size:2.4rem}
+.hero{background:linear-gradient(135deg,#f6e7d0,#fbf7f0)}
+.btn-accent{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-accent:hover,.btn-accent:focus{background:var(--accent-dark);border-color:var(--accent-dark);color:#fff}
+.product-card{border:0;box-shadow:0 2px 8px rgba(0,0,0,.12);transition:transform .2s}
+.product-card:hover{transform:translateY(-4px)}
+.price{color:var(--accent-dark);font-size:1.15rem}
+.promo{background:var(--navy);color:#fff}
+.promo h2{color:#fff}
+.promo a{color:#ffd37a}
+.value-box,.form-panel{background:var(--panel);border-radius:.5rem;padding:1.25rem;box-shadow:0 2px 8px rgba(0,0,0,.08);height:100%}
+.mission blockquote{border-left:5px solid var(--accent);padding-left:1rem;font-style:italic}
+.weather{background:#e7f1ef;border-radius:.5rem;padding:.75rem 1rem}
+.legal{background:#f1ebe0;border-top:1px solid #ddd}
+.site-footer{background:var(--navy);color:#fff;padding:2rem 0}
+.site-footer a,.site-footer address{color:#fff}
+.site-footer a:hover{color:#ffd37a}
+.video-wrap,.map-wrap{max-width:900px}
+.product.hidden-by-filter{display:none}
+/* Radio group error message must show when the group is invalid */
+fieldset.was-invalid .invalid-feedback{display:block}
+/* Respect users who prefer reduced motion (Operable) */
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+/* Cookie notice banner */
+#cookie-banner{position:fixed;bottom:0;left:0;right:0;background:var(--navy);color:#fff;padding:1rem;z-index:1500;box-shadow:0 -2px 8px rgba(0,0,0,.3)}
+#cookie-banner a{color:#ffd37a}

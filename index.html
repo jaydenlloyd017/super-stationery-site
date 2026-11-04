@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <!-- Character set and responsive viewport (needed for mobile layouts) -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Super Stationery: quality, affordable stationery from an independent Manchester shop.">
+  <title>Home | Super Stationery</title>
+  <!-- Google Font for headings; Bootstrap provides the responsive grid; styles.css controls the site-wide look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Accessibility: lets keyboard users jump past the navigation -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-md container" aria-label="Main navigation">
+      <a class="navbar-brand brand" href="index.html">Super Stationery</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li><li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="products.html">Products</a></li><li class="nav-item"><a class="nav-link" href="events.html">Events</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li></ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- Hero section -->
+    <section class="hero py-5" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-md-6">
+            <h1 id="hero-title" class="display-4">Organise. Create. Achieve.</h1>
+            <p class="lead">Quality, reliable and affordable stationery from an independent Manchester shop, trusted by students, schools and businesses for ten years.</p>
+            <a class="btn btn-accent btn-lg" href="products.html">Shop our favourites</a>
+            <a class="btn btn-outline-dark btn-lg" href="events.html">Book an event</a>
+          </div>
+          <div class="col-md-6">
+            <figure class="mb-0">
+              <img src="images/hero.svg" class="img-fluid rounded shadow" alt="A notebook, red pen, teal journal and highlighters laid out on a wooden desk" width="800" height="560">
+              <figcaption class="small text-muted">Illustration created for this project.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="container">
+    <section class="container py-4" aria-labelledby="featured-title">
+      <h2 id="featured-title" class="section-title">Featured products</h2>
+      <div class="row g-4 fade-in-group">
+        <div class="col-sm-6 col-lg-4 product" data-category="writing">
+        <article class="card h-100 product-card">
+          <img src="images/fountain-pen.svg" class="card-img-top" alt="Navy fountain pen with gold trim" width="800" height="560" loading="lazy">
+          <div class="card-body">
+            <h3 class="h5 card-title">Heritage Fountain Pen</h3>
+            <p class="card-text">Smooth steel nib and a refillable converter. A gift worth keeping.</p>
+          </div>
+          <div class="card-footer"><strong class="price">£24.99</strong> <span class="text-muted small">inc. VAT</span></div>
+        </article>
+      </div>
+        <div class="col-sm-6 col-lg-4 product" data-category="paper">
+        <article class="card h-100 product-card">
+          <img src="images/notebook.svg" class="card-img-top" alt="Teal A5 hardback notebook" width="800" height="560" loading="lazy">
+          <div class="card-body">
+            <h3 class="h5 card-title">A5 Hardback Notebook</h3>
+            <p class="card-text">192 ruled pages of 100&nbsp;gsm paper and a lay-flat spine.</p>
+          </div>
+          <div class="card-footer"><strong class="price">£8.99</strong> <span class="text-muted small">inc. VAT</span></div>
+        </article>
+      </div>
+        <div class="col-sm-6 col-lg-4 product" data-category="art">
+        <article class="card h-100 product-card">
+          <img src="images/pencils.svg" class="card-img-top" alt="Seven colouring pencils" width="800" height="560" loading="lazy">
+          <div class="card-body">
+            <h3 class="h5 card-title">Colouring Pencils (24)</h3>
+            <p class="card-text">Rich, blendable colours for art, craft and the classroom.</p>
+          </div>
+          <div class="card-footer"><strong class="price">£11.99</strong> <span class="text-muted small">inc. VAT</span></div>
+        </article>
+      </div>
+      </div>
+      <p class="mt-4"><a href="products.html">See the full range &rarr;</a></p>
+    </section>
+    <aside class="promo py-4" aria-label="Current promotion">
+      <div class="container text-center">
+        <h2 class="h3">Back-to-school offer</h2>
+        <p class="mb-0">Schools and businesses: ask about our bulk-order discounts. <a href="mailto:hello@superstationery.example?subject=Bulk%20order%20enquiry">Email us for a quote</a>.</p>
+      </div>
+    </aside>
+    <section class="container py-5" aria-labelledby="why-title">
+      <div class="row gy-4">
+        <div class="col-md-6">
+          <h2 id="why-title" class="section-title">Why choose us?</h2>
+          <ul>
+            <li><strong>Quality</strong> &ndash; reliable products made to last</li>
+            <li><strong>Affordability</strong> &ndash; good prices for everyone</li>
+            <li><strong>Customer service</strong> &ndash; friendly, knowledgeable help</li>
+            <li><strong>Choice</strong> &ndash; stationery for work, study and creativity</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h2 class="section-title">Find us</h2>
+          <p>Visit us in the Arndale Centre in Manchester city centre.<br>
+          Open six days a week &ndash; see our <a href="contact.html#hours">opening hours</a>.</p>
+          <p><a class="btn btn-outline-dark" href="contact.html">Get in touch</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-md-6">
+          <p class="brand mb-1">Super Stationery</p>
+          <address class="mb-0">Manchester Arndale, 49 High Street, Manchester M4 3AQ<br>
+          Email: <a href="mailto:hello@superstationery.example">hello@superstationery.example</a></address>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <ul class="list-inline mb-1">
+            <li class="list-inline-item"><a href="contact.html#privacy">Privacy &amp; data policy</a></li>
+            <li class="list-inline-item"><a href="contact.html#gdpr">GDPR</a></li>
+            <li class="list-inline-item"><a href="contact.html#terms">Terms &amp; Conditions</a></li>
+            <li class="list-inline-item"><a href="contact.html#cookies">Cookies</a></li>
+          </ul>
+          <small>&copy; 2026 Super Stationery. Prototype website for assessment purposes.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts at the end so the page content loads first. Add further files in js/ later. -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

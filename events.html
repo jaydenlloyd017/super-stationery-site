@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <!-- Character set and responsive viewport (needed for mobile layouts) -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Book onto a Super Stationery workshop, demonstration or product launch.">
+  <title>Events | Super Stationery</title>
+  <!-- Google Font for headings; Bootstrap provides the responsive grid; styles.css controls the site-wide look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Accessibility: lets keyboard users jump past the navigation -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-md container" aria-label="Main navigation">
+      <a class="navbar-brand brand" href="index.html">Super Stationery</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="products.html">Products</a></li><li class="nav-item"><a class="nav-link active" href="events.html" aria-current="page">Events</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li></ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="container py-5" aria-labelledby="ev-title">
+      <h1 id="ev-title" class="section-title">Events &amp; workshops</h1>
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-7">
+          <h2 class="h3">What's on</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered align-middle">
+              <caption>Upcoming events at Super Stationery</caption>
+              <thead><tr><th scope="col">Event</th><th scope="col">Date</th><th scope="col">Time</th><th scope="col">Location</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Calligraphy workshop</th><td><time datetime="2026-11-28">Sat 28 Nov 2026</time></td><td>11:00&ndash;13:00</td><td>In-store, Arndale</td></tr>
+                <tr><th scope="row">Bullet journal demonstration</th><td><time datetime="2026-12-12">Sat 12 Dec 2026</time></td><td>14:00&ndash;15:30</td><td>In-store, Arndale</td></tr>
+                <tr><th scope="row">Spring product launch</th><td><time datetime="2027-03-06">Sat 6 Mar 2027</time></td><td>10:00&ndash;12:00</td><td>In-store, Arndale</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <article class="mb-3"><h3 class="h5">Calligraphy workshop</h3><p>Learn the basics of brush lettering with a tutor. All materials provided. <mark>Limited to 12 places.</mark></p></article>
+          <article class="mb-3"><h3 class="h5">Bullet journal demonstration</h3><p>See how to plan your month with layouts, trackers and doodles. Bring your own notebook or buy one on the day.</p></article>
+          <article class="mb-3"><h3 class="h5">Spring product launch</h3><p>Be first to see our new spring range of premium notebooks and pens.</p></article>
+          <h2 class="h4">How booking works</h2>
+          <ol><li>Choose your event.</li><li>Fill in the form with your details.</li><li>Check the confirmation on screen.</li></ol>
+          <figure><img src="images/workshop.svg" class="img-fluid rounded" alt="Illustration of two workshop tables with pages, and a calligraphy brush" width="800" height="560" loading="lazy"><figcaption class="small text-muted">Our workshops are hands-on and friendly (illustration).</figcaption></figure>
+        </div>
+        <div class="col-lg-5">
+          <div class="form-panel">
+            <h2 class="h3" id="book-title">Book your place</h2>
+            <p class="small">Fields marked <span aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span> are required.</p>
+            <!-- novalidate: validation is handled by our own JS (Constraint Validation API) so we can show helpful messages -->
+            <form id="booking-form" class="needs-validation" novalidate aria-labelledby="book-title">
+              <div class="mb-3">
+                <label for="b-name" class="form-label">Full name *</label>
+                <input type="text" class="form-control" id="b-name" name="name" required minlength="2" maxlength="60" pattern="[A-Za-z][A-Za-z '\-]+" autocomplete="name" aria-describedby="b-name-help">
+                <div id="b-name-help" class="invalid-feedback">Please enter your name (letters only, at least 2 characters).</div>
+              </div>
+              <div class="mb-3">
+                <label for="b-email" class="form-label">Email address *</label>
+                <input type="email" class="form-control" id="b-email" name="email" required maxlength="100" autocomplete="email" aria-describedby="b-email-help">
+                <div id="b-email-help" class="invalid-feedback">Please enter a valid email address, e.g. name@example.com.</div>
+              </div>
+              <div class="mb-3">
+                <label for="b-phone" class="form-label">Phone number *</label>
+                <input type="tel" class="form-control" id="b-phone" name="phone" required pattern="(\+44|0)[0-9 ]{9,12}" placeholder="e.g. 0161 123 4567" autocomplete="tel" aria-describedby="b-phone-help">
+                <div id="b-phone-help" class="invalid-feedback">Please enter a UK phone number, e.g. 0161 123 4567.</div>
+              </div>
+              <div class="mb-3">
+                <label for="b-event" class="form-label">Event *</label>
+                <select class="form-select" id="b-event" name="event" required aria-describedby="b-event-help">
+                  <option value="" selected disabled>Choose an event&hellip;</option>
+                  <option value="Calligraphy workshop - 28 Nov 2026">Calligraphy workshop (28 Nov)</option>
+                  <option value="Bullet journal demonstration - 12 Dec 2026">Bullet journal demo (12 Dec)</option>
+                  <option value="Spring product launch - 6 Mar 2027">Spring product launch (6 Mar)</option>
+                </select>
+                <div id="b-event-help" class="invalid-feedback">Please choose an event.</div>
+              </div>
+              <div class="mb-3">
+                <label for="b-tickets" class="form-label">Number of places (1&ndash;5) *</label>
+                <input type="number" class="form-control" id="b-tickets" name="tickets" required min="1" max="5" value="1" aria-describedby="b-tickets-help">
+                <div id="b-tickets-help" class="invalid-feedback">Please choose between 1 and 5 places.</div>
+              </div>
+              <fieldset class="mb-3">
+                <legend class="form-label fs-6">Contact preference *</legend>
+                <div class="form-check"><input class="form-check-input" type="radio" name="pref" id="pref-email" value="Email" required><label class="form-check-label" for="pref-email">Email</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="pref" id="pref-phone" value="Phone"><label class="form-check-label" for="pref-phone">Phone</label></div>
+                <div class="invalid-feedback">Please choose a contact preference.</div>
+              </fieldset>
+              <div class="mb-3">
+                <label for="b-notes" class="form-label">Access or dietary needs (optional)</label>
+                <textarea class="form-control" id="b-notes" name="notes" rows="3" maxlength="300"></textarea>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="b-consent" name="consent" required>
+                <label class="form-check-label" for="b-consent">I agree to the <a href="contact.html#privacy">privacy policy</a> and <a href="contact.html#terms">terms</a>. *</label>
+                <div class="invalid-feedback">You must agree before booking.</div>
+              </div>
+              <button type="submit" class="btn btn-accent">Book now</button>
+            </form>
+            <div id="booking-confirmation" class="alert alert-success mt-3" role="status" tabindex="-1" hidden></div>
+            <p class="small mt-3 mb-0">Prefer email? <a href="mailto:hello@superstationery.example?subject=Event%20booking%20enquiry">Send us your booking by email</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-md-6">
+          <p class="brand mb-1">Super Stationery</p>
+          <address class="mb-0">Manchester Arndale, 49 High Street, Manchester M4 3AQ<br>
+          Email: <a href="mailto:hello@superstationery.example">hello@superstationery.example</a></address>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <ul class="list-inline mb-1">
+            <li class="list-inline-item"><a href="contact.html#privacy">Privacy &amp; data policy</a></li>
+            <li class="list-inline-item"><a href="contact.html#gdpr">GDPR</a></li>
+            <li class="list-inline-item"><a href="contact.html#terms">Terms &amp; Conditions</a></li>
+            <li class="list-inline-item"><a href="contact.html#cookies">Cookies</a></li>
+          </ul>
+          <small>&copy; 2026 Super Stationery. Prototype website for assessment purposes.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts at the end so the page content loads first. Add further files in js/ later. -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

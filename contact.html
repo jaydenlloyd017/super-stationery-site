@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <!-- Character set and responsive viewport (needed for mobile layouts) -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Super Stationery, find our Arndale Centre shop and read our privacy information.">
+  <title>Contact | Super Stationery</title>
+  <!-- Google Font for headings; Bootstrap provides the responsive grid; styles.css controls the site-wide look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Accessibility: lets keyboard users jump past the navigation -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-md container" aria-label="Main navigation">
+      <a class="navbar-brand brand" href="index.html">Super Stationery</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="products.html">Products</a></li><li class="nav-item"><a class="nav-link" href="events.html">Events</a></li><li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact</a></li></ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="container py-5" aria-labelledby="contact-title">
+      <h1 id="contact-title" class="section-title">Contact us</h1>
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h2 class="h3">Visit or get in touch</h2>
+          <address>
+            <strong>Super Stationery</strong><br>
+            Manchester Arndale, 49 High Street<br>Manchester M4 3AQ<br>
+            Email: <a href="mailto:hello@superstationery.example">hello@superstationery.example</a><br>
+            Phone: <a href="tel:+441610000000">0161 000 0000</a> (prototype number)
+          </address>
+          <h3 class="h5" id="hours">Opening hours</h3>
+          <dl class="row">
+            <dt class="col-5">Monday&ndash;Saturday</dt><dd class="col-7">09:00&ndash;18:00</dd>
+            <dt class="col-5">Sunday</dt><dd class="col-7">11:00&ndash;17:00</dd>
+          </dl>
+          <aside class="weather" aria-live="polite">
+            <h3 class="h6">Manchester right now</h3>
+            <p id="weather" class="mb-0">Loading weather&hellip;</p>
+            <p class="small mb-0">Weather data by <a href="https://open-meteo.com/">Open-Meteo.com</a> (CC BY 4.0)</p>
+          </aside>
+          <figure class="mt-3">
+            <img src="images/notebook.svg" class="img-fluid rounded" alt="Illustration of a teal notebook with a label" width="800" height="560" loading="lazy">
+            <figcaption class="small text-muted">We read every message (illustration).</figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-7">
+          <div class="form-panel">
+            <h2 class="h3" id="msg-title">Send us a message</h2>
+            <form id="contact-form" class="needs-validation" novalidate aria-labelledby="msg-title">
+              <div class="mb-3">
+                <label for="c-name" class="form-label">Name *</label>
+                <input type="text" class="form-control" id="c-name" name="name" required minlength="2" maxlength="60" autocomplete="name">
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="mb-3">
+                <label for="c-email" class="form-label">Email address *</label>
+                <input type="email" class="form-control" id="c-email" name="email" required maxlength="100" autocomplete="email">
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+              <div class="mb-3">
+                <label for="c-msg" class="form-label">Message * (10&ndash;500 characters)</label>
+                <textarea class="form-control" id="c-msg" name="message" rows="5" required minlength="10" maxlength="500"></textarea>
+                <div class="invalid-feedback">Please write a message of at least 10 characters.</div>
+              </div>
+              <button type="submit" class="btn btn-accent">Send message</button>
+            </form>
+            <div id="contact-confirmation" class="alert alert-success mt-3" role="status" tabindex="-1" hidden></div>
+          </div>
+        </div>
+      </div>
+      <h2 class="h3 mt-5">Find us on the map</h2>
+      <div class="ratio ratio-16x9 map-wrap">
+        <iframe title="Google Map showing the Manchester Arndale Centre" src="https://www.google.com/maps?q=Manchester+Arndale+Centre&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+      <h2 class="h3 mt-5">Frequently asked questions</h2>
+      <details class="mb-2"><summary>Do I need to book to visit the shop?</summary><p class="mt-2">No, just walk in. Booking is only needed for events.</p></details>
+      <details class="mb-2"><summary>Do you offer discounts for schools?</summary><p class="mt-2">Yes. Email us for a bulk-order quote.</p></details>
+    </section>
+
+    <!-- Legal notices: required by the project checklist (privacy, GDPR, terms, cookies) -->
+    <section class="legal py-5" aria-labelledby="legal-title">
+      <div class="container">
+        <h2 id="legal-title" class="section-title">Legal information</h2>
+        <h3 id="privacy" class="h4">Privacy and data policy</h3>
+        <p>When you use our forms we collect only what we need: your name, email address and, for bookings, your phone number, chosen event and any access needs. We use this to reply to you and manage event places. We do not sell your data or use it for marketing without your consent. This prototype does not send form data to a server.</p>
+        <h3 id="gdpr" class="h4">GDPR notice</h3>
+        <p>Under the UK GDPR and Data Protection Act 2018, we process your data on the basis of consent and our legitimate interest in running events. You have the right to access, correct or erase your data, to restrict or object to processing and to withdraw consent at any time by emailing <a href="mailto:hello@superstationery.example?subject=Data%20request">hello@superstationery.example</a>. You may complain to the Information Commissioner&rsquo;s Office (ico.org.uk). We keep booking data for up to 12 months.</p>
+        <h3 id="terms" class="h4">Terms and Conditions</h3>
+        <ol>
+          <li>Event places are confirmed by email and are limited.</li>
+          <li>Please give at least 48 hours&rsquo; notice to cancel a booking.</li>
+          <li>Prices shown include VAT and may change.</li>
+          <li>Product images are illustrations and may differ from the item.</li>
+        </ol>
+        <h3 id="cookies" class="h4">Cookie notice</h3>
+        <p>This site uses only essential browser storage to remember your cookie choice and your latest booking on this device. We do not use advertising or tracking cookies. Embedded content from YouTube and Google Maps may set its own cookies when loaded.</p>
+        <button type="button" class="btn btn-outline-dark btn-sm" id="reset-cookies">Reset my cookie choice</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-md-6">
+          <p class="brand mb-1">Super Stationery</p>
+          <address class="mb-0">Manchester Arndale, 49 High Street, Manchester M4 3AQ<br>
+          Email: <a href="mailto:hello@superstationery.example">hello@superstationery.example</a></address>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <ul class="list-inline mb-1">
+            <li class="list-inline-item"><a href="contact.html#privacy">Privacy &amp; data policy</a></li>
+            <li class="list-inline-item"><a href="contact.html#gdpr">GDPR</a></li>
+            <li class="list-inline-item"><a href="contact.html#terms">Terms &amp; Conditions</a></li>
+            <li class="list-inline-item"><a href="contact.html#cookies">Cookies</a></li>
+          </ul>
+          <small>&copy; 2026 Super Stationery. Prototype website for assessment purposes.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts at the end so the page content loads first. Add further files in js/ later. -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

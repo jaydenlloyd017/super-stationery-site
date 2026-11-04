@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <!-- Character set and responsive viewport (needed for mobile layouts) -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The history, mission and values of Super Stationery, an independent Manchester stationery shop.">
+  <title>About Us | Super Stationery</title>
+  <!-- Google Font for headings; Bootstrap provides the responsive grid; styles.css controls the site-wide look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Accessibility: lets keyboard users jump past the navigation -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-md container" aria-label="Main navigation">
+      <a class="navbar-brand brand" href="index.html">Super Stationery</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link active" href="about.html" aria-current="page">About Us</a></li><li class="nav-item"><a class="nav-link" href="products.html">Products</a></li><li class="nav-item"><a class="nav-link" href="events.html">Events</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li></ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="container py-5" aria-labelledby="about-title">
+      <h1 id="about-title" class="section-title">About Super Stationery</h1>
+      <div class="row align-items-center gy-4">
+        <div class="col-md-7">
+          <h2 class="h3">Our history</h2>
+          <p>Super Stationery is an independent stationery retailer based in Manchester. We were established ten years ago to offer customers high-quality stationery at affordable prices.</p>
+          <p>We began as a small local shop selling everyday essentials such as pens, pencils, notebooks, folders and office supplies. As our reputation grew, we expanded into premium stationery, art and craft materials, school supplies, organisational products and business stationery.</p>
+          <p>Over the last decade we have built a loyal customer base of students, individuals, schools and local businesses.</p>
+        </div>
+        <div class="col-md-5">
+          <figure>
+            <img src="images/shop.svg" class="img-fluid rounded shadow" alt="Illustration of the Super Stationery shop front with a red sign and two display windows" width="800" height="560">
+            <figcaption class="small text-muted">Our shop in Manchester (illustration).</figcaption>
+          </figure>
+        </div>
+      </div>
+      <hr>
+      <article class="mission">
+        <h2 class="h3">Our mission</h2>
+        <blockquote class="blockquote">
+          <p>&ldquo;At Super Stationery, our mission is to provide high-quality, reliable and affordable stationery that helps our customers organise, create and achieve. We aim to combine excellent products with friendly customer service, serving individuals, students, schools and businesses across Manchester and beyond.&rdquo;</p>
+        </blockquote>
+      </article>
+      <h2 class="h3 mt-4">Our values</h2>
+      <div class="row g-3">
+        <div class="col-sm-6 col-lg-3"><div class="value-box"><h3 class="h5">Quality</h3><p class="mb-0">Stationery that is reliable, practical and made to last.</p></div></div>
+        <div class="col-sm-6 col-lg-3"><div class="value-box"><h3 class="h5">Affordability</h3><p class="mb-0">Good-quality products at reasonable prices.</p></div></div>
+        <div class="col-sm-6 col-lg-3"><div class="value-box"><h3 class="h5">Customer service</h3><p class="mb-0">Friendly and helpful support for every customer.</p></div></div>
+        <div class="col-sm-6 col-lg-3"><div class="value-box"><h3 class="h5">Choice</h3><p class="mb-0">A wide selection for work, study and creativity.</p></div></div>
+      </div>
+    </section>
+    <section class="container pb-5" aria-labelledby="timeline-title">
+      <h2 id="timeline-title" class="h3">Ten years in brief</h2>
+      <ol>
+        <li>A small local shop opens selling everyday essentials.</li>
+        <li>Our reputation grows and the range expands to premium and art supplies.</li>
+        <li>School supplies and business stationery join the range.</li>
+        <li>We serve students, schools, individuals and businesses across Manchester.</li>
+      </ol>
+      <h2 class="h3 mt-4">Watch: a look inside a stationery shop</h2>
+      <!-- Embedded YouTube video (privacy-enhanced domain). Replace VIDEO_ID with the ID of a video you are allowed to embed. -->
+      <div class="ratio ratio-16x9 video-wrap">
+        <iframe src="https://www.youtube.com/watch?v=AQkjH_06KUE&t=70s" title="Video: inside a stationery shop" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p class="small text-muted mt-2">Captions can be switched on in the video player.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-md-6">
+          <p class="brand mb-1">Super Stationery</p>
+          <address class="mb-0">Manchester Arndale, 49 High Street, Manchester M4 3AQ<br>
+          Email: <a href="mailto:hello@superstationery.example">hello@superstationery.example</a></address>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <ul class="list-inline mb-1">
+            <li class="list-inline-item"><a href="contact.html#privacy">Privacy &amp; data policy</a></li>
+            <li class="list-inline-item"><a href="contact.html#gdpr">GDPR</a></li>
+            <li class="list-inline-item"><a href="contact.html#terms">Terms &amp; Conditions</a></li>
+            <li class="list-inline-item"><a href="contact.html#cookies">Cookies</a></li>
+          </ul>
+          <small>&copy; 2026 Super Stationery. Prototype website for assessment purposes.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts at the end so the page content loads first. Add further files in js/ later. -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
