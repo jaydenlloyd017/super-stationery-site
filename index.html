@@ -23,7 +23,13 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li><li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="products.html">Products</a></li><li class="nav-item"><a class="nav-link" href="events.html">Events</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li></ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
       </div>
     </nav>
   </header>
@@ -42,55 +48,74 @@
           <div class="col-md-6">
             <figure class="mb-0">
               <img src="images/hero_image.jpg" class="img-fluid rounded shadow" alt="A notebook, red pen, teal journal and highlighters laid out on a wooden desk" width="800" height="560">
-              
             </figure>
           </div>
         </div>
       </div>
     </section>
+
     <hr class="container">
+
+    <!-- Featured products: four cards. 1 per row on phones, 2 on tablets, 4 on desktop -->
     <section class="container py-4" aria-labelledby="featured-title">
       <h2 id="featured-title" class="section-title">Featured products</h2>
       <div class="row g-4 fade-in-group">
-        <div class="col-sm-6 col-lg-4 product" data-category="writing">
-        <article class="card h-100 product-card">
-          <img src="images/fountain_pen.jpg" class="card-img-top" alt="Navy fountain pen with gold trim" width="800" height="560" loading="lazy">
-          <div class="card-body">
-            <h3 class="h5 card-title">Heritage Fountain Pen</h3>
-            <p class="card-text">Smooth steel nib and a refillable converter. A gift worth keeping.</p>
-          </div>
-          <div class="card-footer"><strong class="price">£24.99</strong> <span class="text-muted small">inc. VAT</span></div>
-        </article>
-      </div>
-        <div class="col-sm-6 col-lg-4 product" data-category="paper">
-        <article class="card h-100 product-card">
-          <img src="images/notebook.jpeg" class="card-img-top" alt="Teal A5 hardback notebook" width="800" height="560" loading="lazy">
-          <div class="card-body">
-            <h3 class="h5 card-title">A5 Hardback Notebook</h3>
-            <p class="card-text">192 ruled pages of 100&nbsp;gsm paper and a lay-flat spine.</p>
-          </div>
-          <div class="card-footer"><strong class="price">£8.99</strong> <span class="text-muted small">inc. VAT</span></div>
-        </article>
-      </div>
-        <div class="col-sm-6 col-lg-4 product" data-category="art">
-        <article class="card h-100 product-card">
-          <img src="images/pencil.webp" class="card-img-top" alt="Seven colouring pencils" width="800" height="560" loading="lazy">
-          <div class="card-body">
-            <h3 class="h5 card-title">Colouring Pencils (24)</h3>
-            <p class="card-text">Rich, blendable colours for art, craft and the classroom.</p>
-          </div>
-          <div class="card-footer"><strong class="price">£11.99</strong> <span class="text-muted small">inc. VAT</span></div>
-        </article>
-      </div>
+
+        <div class="col-sm-6 col-lg-3 product" data-category="writing">
+          <article class="card h-100 product-card">
+            <img src="images/fountain_pen.jpg" class="card-img-top" alt="Navy fountain pen with gold trim" width="800" height="560" loading="lazy">
+            <div class="card-body">
+              <h3 class="h5 card-title">Heritage Fountain Pen</h3>
+              <p class="card-text">Smooth steel nib and a refillable converter. A gift worth keeping.</p>
+            </div>
+            <div class="card-footer"><strong class="price">£24.99</strong> <span class="text-muted small">inc. VAT</span></div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 product" data-category="writing">
+          <article class="card h-100 product-card">
+            <img src="images/gel_pens.webp" class="card-img-top" alt="Seven colourful gel pens fanned out" width="800" height="560" loading="lazy">
+            <div class="card-body">
+              <h3 class="h5 card-title">Gel Pen Set (7)</h3>
+              <p class="card-text">Quick-drying 0.5&nbsp;mm gel ink in seven bright colours.</p>
+            </div>
+            <div class="card-footer"><strong class="price">£6.50</strong> <span class="text-muted small">inc. VAT</span></div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 product" data-category="paper">
+          <article class="card h-100 product-card">
+            <img src="images/notebook.jpeg" class="card-img-top" alt="Teal A5 hardback notebook" width="800" height="560" loading="lazy">
+            <div class="card-body">
+              <h3 class="h5 card-title">A5 Hardback Notebook</h3>
+              <p class="card-text">192 ruled pages of 100&nbsp;gsm paper and a lay-flat spine.</p>
+            </div>
+            <div class="card-footer"><strong class="price">£8.99</strong> <span class="text-muted small">inc. VAT</span></div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 product" data-category="art">
+          <article class="card h-100 product-card">
+            <img src="images/pencil.webp" class="card-img-top" alt="Seven colouring pencils" width="800" height="560" loading="lazy">
+            <div class="card-body">
+              <h3 class="h5 card-title">Colouring Pencils (24)</h3>
+              <p class="card-text">Rich, blendable colours for art, craft and the classroom.</p>
+            </div>
+            <div class="card-footer"><strong class="price">£11.99</strong> <span class="text-muted small">inc. VAT</span></div>
+          </article>
+        </div>
+
       </div>
       <p class="mt-4"><a href="products.html">See the full range &rarr;</a></p>
     </section>
+
     <aside class="promo py-4" aria-label="Current promotion">
       <div class="container text-center">
         <h2 class="h3">Back-to-school offer</h2>
         <p class="mb-0">Schools and businesses: ask about our bulk-order discounts. <a href="mailto:hello@superstationery.example?subject=Bulk%20order%20enquiry">Email us for a quote</a>.</p>
       </div>
     </aside>
+
     <section class="container py-5" aria-labelledby="why-title">
       <div class="row gy-4">
         <div class="col-md-6">
